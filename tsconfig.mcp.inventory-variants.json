@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "dist/mcp-inventory-variants",
+    "rootDir": "src/mcp-inventory-variants",
+    "declaration": false,
+    "emitDeclarationOnly": false,
+    "allowJs": false
+  },
+  "include": ["src/mcp-inventory-variants/**/*"],
+  "exclude": []
+}

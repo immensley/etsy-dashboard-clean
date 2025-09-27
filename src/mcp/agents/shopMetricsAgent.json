@@ -1,0 +1,21 @@
+{
+  "name": "shop-metrics",
+  "description": "Summarize Etsy shop performance metrics",
+  "entrypoint": "./dist/mcp-shop-metrics/index.js",
+  "commands": [
+    {
+      "name": "get-metrics",
+      "description": "Fetch aggregated metrics (views, revenue, orders) for an Etsy shop",
+      "arguments": [
+        { "name": "shop_id", "type": "string", "required": true },
+        { "name": "period", "type": "string", "description": "Reporting window such as 7d, 30d, 90d" },
+        {
+          "name": "metrics",
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Optional list of metrics to request (views, visits, orders, revenue, favorites)"
+        }
+      ]
+    }
+  ]
+}

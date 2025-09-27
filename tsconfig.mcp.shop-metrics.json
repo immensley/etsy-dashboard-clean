@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "dist/mcp-shop-metrics",
+    "rootDir": "src/mcp-shop-metrics",
+    "declaration": false,
+    "emitDeclarationOnly": false,
+    "allowJs": false
+  },
+  "include": ["src/mcp-shop-metrics/**/*"],
+  "exclude": []
+}

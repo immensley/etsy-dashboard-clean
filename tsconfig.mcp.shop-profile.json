@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "dist/mcp-shop-profile",
+    "rootDir": "src/mcp-shop-profile",
+    "declaration": false,
+    "emitDeclarationOnly": false,
+    "allowJs": false
+  },
+  "include": ["src/mcp-shop-profile/**/*"],
+  "exclude": []
+}

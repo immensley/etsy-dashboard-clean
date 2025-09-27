@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "dist/mcp-shop-announcements",
+    "rootDir": "src/mcp-shop-announcements",
+    "declaration": false,
+    "emitDeclarationOnly": false,
+    "allowJs": false
+  },
+  "include": ["src/mcp-shop-announcements/**/*"],
+  "exclude": []
+}

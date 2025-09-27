@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "dist/mcp-review-insights",
+    "rootDir": "src/mcp-review-insights",
+    "declaration": false,
+    "emitDeclarationOnly": false,
+    "allowJs": false
+  },
+  "include": ["src/mcp-review-insights/**/*"],
+  "exclude": []
+}

@@ -1,0 +1,14 @@
+{
+  "name": "shop-profile",
+  "description": "Fetch Etsy shop profile metadata and social links",
+  "entrypoint": "./dist/mcp-shop-profile/index.js",
+  "commands": [
+    {
+      "name": "get-profile",
+      "description": "Return a normalized profile snapshot for an Etsy shop",
+      "arguments": [
+        { "name": "shop_id", "type": "string", "required": true }
+      ]
+    }
+  ]
+}

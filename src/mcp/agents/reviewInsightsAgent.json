@@ -1,0 +1,16 @@
+{
+  "name": "review-insights",
+  "description": "Aggregate recent Etsy reviews into actionable insights",
+  "entrypoint": "./dist/mcp-review-insights/index.js",
+  "commands": [
+    {
+      "name": "get-insights",
+      "description": "Return review distribution, response rate, and highlights",
+      "arguments": [
+        { "name": "shop_id", "type": "string", "required": true },
+        { "name": "limit", "type": "integer", "description": "Number of reviews to analyze (default 120)" },
+        { "name": "offset", "type": "integer", "description": "Offset for pagination" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "inventory-variants",
+  "description": "Inspect Etsy listing inventory variants and stock levels",
+  "entrypoint": "./dist/mcp-inventory-variants/index.js",
+  "commands": [
+    {
+      "name": "get-inventory",
+      "description": "Fetch normalized variant and offering data for a listing",
+      "arguments": [
+        { "name": "listing_id", "type": "string", "required": true }
+      ]
+    }
+  ]
+}

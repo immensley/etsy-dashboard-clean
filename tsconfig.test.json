@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": ".tmp-tests",
+    "module": "commonjs",
+    "target": "ES2020",
+    "moduleResolution": "node",
+    "declaration": false,
+    "emitDeclarationOnly": false,
+    "noEmitOnError": true
+  },
+  "include": [
+    "src/lib/dashboard-types.ts",
+    "src/lib/dashboard-defaults.ts",
+    "src/lib/dashboard-service.ts",
+    "src/lib/dashboard-service.test.ts"
+  ],
+  "exclude": []
+}

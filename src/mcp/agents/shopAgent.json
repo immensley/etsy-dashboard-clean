@@ -1,0 +1,11 @@
+{
+  "name": "fetch-shop",
+  "description": "Fetch Etsy shop listings via ZenRows",
+  "entrypoint": "./dist/mcp/index.js",
+  "arguments": [
+    { "name": "shop_id", "type": "string", "description": "The Etsy shop ID" },
+    { "name": "section_id", "type": "string", "description": "The Etsy section ID (optional)" },
+    { "name": "limit", "type": "integer", "description": "Number of listings to fetch" },
+    { "name": "offset", "type": "integer", "description": "Offset for pagination" }
+  ]
+}

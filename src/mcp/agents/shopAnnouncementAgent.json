@@ -1,0 +1,14 @@
+{
+  "name": "shop-announcement",
+  "description": "Fetch shop announcements, vacation notices, and policy summaries",
+  "entrypoint": "./dist/mcp-shop-announcements/index.js",
+  "commands": [
+    {
+      "name": "get-announcement",
+      "description": "Return the current announcement and related policy text for an Etsy shop",
+      "arguments": [
+        { "name": "shop_id", "type": "string", "required": true }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "listingAgent",
+  "description": "Fetches a single Etsy listing with details",
+  "entrypoint": "./dist/mcp/index.js",
+  "commands": [
+    {
+      "name": "get-listing",
+      "description": "Fetch and format a single Etsy listing",
+      "arguments": [
+        { "name": "listing_id", "type": "string", "required": true }
+      ]
+    }
+  ]
+}
