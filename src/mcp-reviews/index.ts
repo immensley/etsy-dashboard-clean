@@ -1,5 +1,5 @@
-import { fetchShopReviews } from "./etsyReviewsClient.js";
-import { parseReviews, type ParsedReviewGroup } from "./parser.js";
+import { fetchShopReviews } from "./etsyReviewsClient";
+import { parseReviews, type ParsedReviewGroup } from "./parser";
 
 export interface GetShopReviewsParams {
   shopId: string;
@@ -23,4 +23,4 @@ export async function fetchReviews(params: GetShopReviewsParams): Promise<Review
   return getShopReviews(params);
 }
 
-export type { ParsedReviewGroup, ParsedReviewEntry, BuyerInfo, ListingSummary } from "./parser.js";
+export type { ParsedReviewGroup, ParsedReviewEntry, BuyerInfo, ListingSummary } from "./parser";

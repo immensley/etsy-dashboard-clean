@@ -1,5 +1,5 @@
-import { fetchShopSections } from "./etsySectionsClient.js";
-import { parseSections, type ParsedSection } from "./parser.js";
+import { fetchShopSections } from "./etsySectionsClient";
+import { parseSections, type ParsedSection } from "./parser";
 
 export interface FetchSectionsParams {
   shopId: string;
@@ -25,4 +25,4 @@ export async function fetchSections(params: FetchSectionsParams): Promise<Sectio
   return getShopSections(params.shopId);
 }
 
-export type { ParsedSection } from "./parser.js";
+export type { ParsedSection } from "./parser";

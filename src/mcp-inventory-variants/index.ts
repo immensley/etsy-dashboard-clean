@@ -1,5 +1,5 @@
-import { fetchListingInventory } from "./etsyInventoryClient.js";
-import { parseInventory, type InventorySummary } from "./parser.js";
+import { fetchListingInventory } from "./etsyInventoryClient";
+import { parseInventory, type InventorySummary } from "./parser";
 
 export interface InventoryPayload {
   inventory: InventorySummary | null;
@@ -21,4 +21,4 @@ export async function fetchInventory({ listing_id }: { listing_id: string | numb
   return getInventoryVariants(listing_id);
 }
 
-export { type InventorySummary, type InventoryVariant, type VariantOffering, type VariantOption } from "./parser.js";
+export { type InventorySummary, type InventoryVariant, type VariantOffering, type VariantOption } from "./parser";

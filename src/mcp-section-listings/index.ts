@@ -1,5 +1,5 @@
-import { fetchSectionListings, type FetchSectionListingsParams } from "./etsySectionListingsClient.js";
-import { parseSectionListings, type ParsedSectionListing } from "./parser.js";
+import { fetchSectionListings, type FetchSectionListingsParams } from "./etsySectionListingsClient";
+import { parseSectionListings, type ParsedSectionListing } from "./parser";
 
 export type GetSectionListingsParams = FetchSectionListingsParams;
 
@@ -18,4 +18,4 @@ export async function fetchListings(params: GetSectionListingsParams): Promise<S
   return getSectionListings(params);
 }
 
-export type { ParsedSectionListing, ListingMediaSummary, ShopSummary } from "./parser.js";
+export type { ParsedSectionListing, ListingMediaSummary, ShopSummary } from "./parser";

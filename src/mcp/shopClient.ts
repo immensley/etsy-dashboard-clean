@@ -1,6 +1,6 @@
-import { fetchShopListings as fetchRawShopListings } from "./etsyClient.js";
-import { fetchListing } from "./listingClient.js";
-import { parseListings, type ParsedListing } from "./parser.js";
+import { fetchShopListings as fetchRawShopListings } from "./etsyClient";
+import { fetchListing } from "./listingClient";
+import { parseListings, type ParsedListing } from "./parser";
 
 type MaybeNumber = number | string | undefined;
 

@@ -1,5 +1,5 @@
-import { fetchShopProfile } from "./etsyShopProfileClient.js";
-import { parseShopProfile, type ShopProfile } from "./parser.js";
+import { fetchShopProfile } from "./etsyShopProfileClient";
+import { parseShopProfile, type ShopProfile } from "./parser";
 
 export interface ShopProfilePayload {
   profile: ShopProfile | null;
@@ -21,4 +21,4 @@ export async function fetchProfile({ shop_id }: { shop_id: string }): Promise<Sh
   return getShopProfile(shop_id);
 }
 
-export { type ShopProfile } from "./parser.js";
+export { type ShopProfile } from "./parser";

@@ -1,5 +1,5 @@
-import { fetchReviewInsights, type FetchReviewInsightsParams } from "./etsyReviewInsightsClient.js";
-import { parseReviewInsights, type ReviewInsights } from "./parser.js";
+import { fetchReviewInsights, type FetchReviewInsightsParams } from "./etsyReviewInsightsClient";
+import { parseReviewInsights, type ReviewInsights } from "./parser";
 
 export interface ReviewInsightsPayload {
   insights: ReviewInsights;
@@ -24,4 +24,4 @@ export async function fetchInsights({ shop_id, limit, offset }: { shop_id: strin
   return getReviewInsights(shop_id, { limit, offset });
 }
 
-export { type ReviewInsights, type ReviewHighlight, type RatingBucket, type LanguageBucket } from "./parser.js";
+export { type ReviewInsights, type ReviewHighlight, type RatingBucket, type LanguageBucket } from "./parser";

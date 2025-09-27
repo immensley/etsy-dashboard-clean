@@ -1,15 +1,15 @@
 import { unstable_cache } from "next/cache";
-import { getListingData } from "@/mcp/index";
-import { getInventoryVariants } from "@/mcp-inventory-variants/index";
-import { getShopMetrics, type ShopMetricSummary } from "@/mcp-shop-metrics/index";
-import { getShopSections } from "@/mcp-sections/index";
-import { getReviewInsights } from "@/mcp-review-insights/index";
-import { getSectionListings } from "@/mcp-section-listings/index";
-import type { ListingDetails } from "@/mcp/parser.js";
-import type { InventorySummary, InventoryVariant } from "@/mcp-inventory-variants/parser.js";
-import type { ReviewInsights } from "@/mcp-review-insights/parser.js";
-import type { ParsedSection } from "@/mcp-sections/parser.js";
-import type { ParsedSectionListing } from "@/mcp-section-listings/parser.js";
+import { getListingData } from "@/mcp";
+import { getInventoryVariants } from "@/mcp-inventory-variants";
+import { getShopMetrics, type ShopMetricSummary } from "@/mcp-shop-metrics";
+import { getShopSections } from "@/mcp-sections";
+import { getReviewInsights } from "@/mcp-review-insights";
+import { getSectionListings } from "@/mcp-section-listings";
+import type { ListingDetails } from "@/mcp/parser";
+import type { InventorySummary, InventoryVariant } from "@/mcp-inventory-variants/parser";
+import type { ReviewInsights } from "@/mcp-review-insights/parser";
+import type { ParsedSection } from "@/mcp-sections/parser";
+import type { ParsedSectionListing } from "@/mcp-section-listings/parser";
 import type {
   ListingDashboardData,
   ListingVariantRow,

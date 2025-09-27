@@ -1,5 +1,5 @@
 import fetch, { type Response } from "node-fetch";
-import { parseSingleListing, type ListingDetails } from "./parser.js";
+import { parseSingleListing, type ListingDetails } from "./parser";
 
 const USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)";
 

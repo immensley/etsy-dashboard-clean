@@ -1,5 +1,5 @@
-import { fetchShopListings } from "./shopClient.js";
-import { fetchListing } from "./listingClient.js";
+import { fetchShopListings } from "./shopClient";
+import { fetchListing } from "./listingClient";
 
 export async function getShopData(shopId: string, sectionId?: string, limit?: number, offset?: number) {
   return fetchShopListings({ shopId, sectionId, limit, offset });

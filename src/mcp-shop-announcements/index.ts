@@ -1,5 +1,5 @@
-import { fetchShopAnnouncements } from "./etsyShopAnnouncementsClient.js";
-import { parseAnnouncement, type ShopAnnouncementSummary } from "./parser.js";
+import { fetchShopAnnouncements } from "./etsyShopAnnouncementsClient";
+import { parseAnnouncement, type ShopAnnouncementSummary } from "./parser";
 
 export interface ShopAnnouncementPayload {
   announcement: ShopAnnouncementSummary | null;
@@ -21,4 +21,4 @@ export async function fetchAnnouncement({ shop_id }: { shop_id: string }): Promi
   return getShopAnnouncement(shop_id);
 }
 
-export { type ShopAnnouncementSummary, type PolicySummary, type AnnouncementHighlight } from "./parser.js";
+export { type ShopAnnouncementSummary, type PolicySummary, type AnnouncementHighlight } from "./parser";

@@ -1,5 +1,5 @@
-import { fetchShopMetrics, type FetchShopMetricsOptions } from "./etsyShopMetricsClient.js";
-import { parseShopMetrics, type ShopMetricSummary } from "./parser.js";
+import { fetchShopMetrics, type FetchShopMetricsOptions } from "./etsyShopMetricsClient";
+import { parseShopMetrics, type ShopMetricSummary } from "./parser";
 
 export interface ShopMetricsPayload {
   metrics: ShopMetricSummary[];
@@ -34,5 +34,5 @@ export async function fetchMetrics({
   return getShopMetrics(shop_id, { period, metrics: metricList });
 }
 
-export { type ShopMetricSummary } from "./parser.js";
-export { type FetchShopMetricsOptions } from "./etsyShopMetricsClient.js";
+export { type ShopMetricSummary } from "./parser";
+export { type FetchShopMetricsOptions } from "./etsyShopMetricsClient";
